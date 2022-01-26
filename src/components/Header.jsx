@@ -2,14 +2,14 @@ import { AiOutlineSearch } from "react-icons/ai";
 
 const Header = () => {
   return (
-    <nav>
-      <div>
+    <nav className="header-nav">
+      <div className="header-logo">
         <p>React Maps Project</p>
       </div>
-      <div>
-        <label htmlFor="search">Look up new places</label>
-        <AiOutlineSearch />
-        <input type="text" name="search" />
+      <div className="header-search">
+        <label htmlFor="search">Look up new places:</label>
+        <AiOutlineSearch className="header-icon" />
+        <input type="text" name="search" placeholder="Search..." />
       </div>
     </nav>
   );

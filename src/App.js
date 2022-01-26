@@ -7,9 +7,11 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <List />
-      <PlaceDetails />
-      <Map />
+      <div className="main-container">
+        <List />
+        <Map />
+      </div>
+      {/* <PlaceDetails /> */}
     </div>
   );
 }
