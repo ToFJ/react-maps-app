@@ -18,12 +18,6 @@ function App() {
     params: {
       latitude: "12.91285",
       longitude: "100.87808",
-      limit: "30",
-      currency: "USD",
-      distance: "2",
-      open_now: "false",
-      lunit: "km",
-      lang: "en_US",
     },
     headers: {
       "x-rapidapi-host": "travel-advisor.p.rapidapi.com",

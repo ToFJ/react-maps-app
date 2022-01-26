@@ -5,7 +5,7 @@ import { FaHandPointRight } from "react-icons/fa";
 const RestaurantList = ({ place }) => {
   console.log(place);
   return (
-    <div>
+    <div className="place-container">
       {place?.map((place, index) => {
         return (
           <div className="place" key={index}>
@@ -39,12 +39,17 @@ const RestaurantList = ({ place }) => {
                 </span>
                 {place.address}
               </p>
-              <p className="address">
-                <span>
-                  <AiFillPhone />
-                </span>
-                {place.phone}
-              </p>
+              {place?.phone ? (
+                <p className="address">
+                  <span>
+                    <AiFillPhone />
+                  </span>
+                  {place.phone}
+                </p>
+              ) : (
+                ""
+              )}
+
               <a className="website" href={place.web_url}>
                 <span>
                   <AiOutlineLink />

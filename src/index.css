@@ -104,7 +104,7 @@ a {
 /* HEADER END */
 
 .map-container {
-  height: 90vh;
+  height: 86vh;
   width: 60vw;
 }
 
@@ -117,7 +117,10 @@ a {
 @media (max-width: 850px) {
   .main-container {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
+  }
+  .place-container {
+    margin-bottom: 1rem;
   }
   .map-container {
     height: 85vh;
@@ -127,9 +130,15 @@ a {
   }
 }
 
+.place-container {
+  height: 86vh;
+  overflow-y: auto;
+}
+
 .place {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  margin: 1rem;
+  margin: 0 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .place h1 {
