@@ -2,11 +2,13 @@ import { FaMapMarkerAlt } from "react-icons/fa";
 import { AiOutlineLink, AiFillStar, AiFillPhone } from "react-icons/ai";
 import { FaHandPointRight } from "react-icons/fa";
 
-const RestaurantList = ({ place }) => {
+const RestaurantList = ({ place, coords, setCoords }) => {
   console.log(place);
+
   return (
     <div className="place-container">
       {place?.map((place, index) => {
+        const { latitude, longitude } = place;
         return (
           <div className="place" key={index}>
             <div>
@@ -21,7 +23,12 @@ const RestaurantList = ({ place }) => {
               <h1>{place.name}</h1>
             </div>
             <div className="place-info">
-              <p className="place-location">
+              <p
+                onClick={e => {
+                  setCoords({ lat: latitude, lng: longitude });
+                }}
+                className="place-location"
+              >
                 <span>
                   <FaHandPointRight />
                 </span>
