@@ -139,6 +139,7 @@ a {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   margin: 0 1rem;
   margin-bottom: 1.5rem;
+  background-color: rgb(245, 245, 245);
 }
 
 .place h1 {
@@ -162,6 +163,10 @@ a {
   display: flex;
   justify-content: space-between;
   margin: 0.5rem 1rem;
+}
+
+.ranking span {
+  color: rgb(236, 236, 0);
 }
 
 .address {
