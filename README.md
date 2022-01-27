@@ -1,6 +1,6 @@
 # A React App focused on Map + Trip Advisor API
 
-*Project is uncomplete and half of it is missing because I ran out of API requests.*
+*Project is incomplete and half of it is missing because I ran out of API requests.*
 
 I had to do quiet a lot of research for the leaflet.js map and had to rethink some features and change them up because they weren't really possible with this API.
 
